@@ -1,0 +1,51 @@
+@keyframes typing {
+
+  0% {
+
+    width: 0;
+
+  }
+
+  100% { 
+
+    width:11em;
+
+  }
+
+}
+
+@keyframes cursor {
+
+  0% {
+
+    border-color: transparent;
+
+  }
+
+  50% {
+
+    border-color: #000;
+
+  }
+
+  100% {
+
+    border-color: transparent;
+
+  }
+
+}
+h1 {
+
+  width: 11em;
+
+  border-right: 0.1em solid #000;
+
+  white-space: nowrap;
+
+  overflow: hidden;
+
+  animation: typing 08s steps(11, end), cursor 0.8s step-end infinite;
+
+}
+
